@@ -4,7 +4,11 @@
     <view class="text-area">
       <text class="border-base text-[red]">{{ title }}</text>
     </view>
-    <MButton :text="userStore.welcome" />
+    <view class="text-area">
+        <text class="border-base text-[red]">welcome: {{ $t('welcome') }}</text>
+      </view>
+
+    <button @click="toggleLocale">切换语言</button>
   </view>
 </template>
 
@@ -12,10 +16,16 @@
 import { ref } from 'vue'
 import MButton from '@/components/Button.vue';
 import useUserStore from '@/stores/user';
+import { useI18n } from 'vue-i18n';
+import { ELocaleKeys } from '@/locale/index';
 
 const title = ref('Hello');
 const userStore = useUserStore();
 
+const { locale } = useI18n();
+const toggleLocale = () => {
+  locale.value = locale.value === ELocaleKeys.zhHans ? ELocaleKeys.enUS : ELocaleKeys.zhHans;
+}
 </script>
 
 <style>
