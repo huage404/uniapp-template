@@ -52,6 +52,8 @@
     "@dcloudio/uni-mp-toutiao": "3.0.0-3081220230817001",
     "@dcloudio/uni-mp-weixin": "3.0.0-3081220230817001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-3081220230817001",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
     "jest": "27.0.4",
     "jest-environment-node": "27.5.1",
     "postcss": ">=8.1.0 <9.0.0",

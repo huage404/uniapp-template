@@ -4,12 +4,15 @@
     <view class="text-area">
       <text class="border-base text-[red]">{{ title }}</text>
     </view>
+    <MButton :text="'sadfsadf'" />
   </view>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import MButton from '@/components/Button.vue';
 const title = ref('Hello')
+
 </script>
 
 <style>
