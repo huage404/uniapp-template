@@ -4,14 +4,17 @@
     <view class="text-area">
       <text class="border-base text-[red]">{{ title }}</text>
     </view>
-    <MButton :text="'sadfsadf'" />
+    <MButton :text="userStore.welcome" />
   </view>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue'
 import MButton from '@/components/Button.vue';
-const title = ref('Hello')
+import useUserStore from '@/stores/user';
+
+const title = ref('Hello');
+const userStore = useUserStore();
 
 </script>
 
