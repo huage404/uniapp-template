@@ -1,6 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@alova/adapter-uniapp': ^2.0.11
+  '@alova/shared': ^1.1.2
   '@commitlint/cli': ^19.8.0
   '@dcloudio/types': ^3.4.8
   '@dcloudio/uni-app': 3.0.0-4030620241128001
@@ -25,6 +27,7 @@ specifiers:
   '@eslint/js': ^9.23.0
   '@vue/runtime-core': ^3.4.21
   '@vue/tsconfig': ^0.1.3
+  alova: ^3.2.10
   commitlint: ^19.8.0
   commitlint-config-gitmoji: ^2.3.1
   eslint: ^8.57.1
@@ -46,6 +49,8 @@ specifiers:
   vue-tsc: ^1.0.24
 
 dependencies:
+  '@alova/adapter-uniapp': 2.0.11_alova@3.2.10
+  '@alova/shared': 1.1.2
   '@dcloudio/uni-app': 3.0.0-4030620241128001_dwiqf3kevxdiv2syfqkvzm6xwm
   '@dcloudio/uni-app-harmony': 3.0.0-4030620241128001_ub4j6snrgbqmf6kw3puo4b5p3q
   '@dcloudio/uni-app-plus': 3.0.0-4030620241128001_ub4j6snrgbqmf6kw3puo4b5p3q
@@ -61,6 +66,7 @@ dependencies:
   '@dcloudio/uni-mp-weixin': 3.0.0-4030620241128001_postcss@8.5.3+vue@3.5.13
   '@dcloudio/uni-mp-xhs': 3.0.0-4030620241128001_postcss@8.5.3+vue@3.5.13
   '@dcloudio/uni-quickapp-webview': 3.0.0-4030620241128001_postcss@8.5.3+vue@3.5.13
+  alova: 3.2.10
   pinia: 2.0.36_6ojp7pwvafskey22aliwdxkyey
   vue: 3.5.13_typescript@4.9.5
   vue-i18n: 9.14.3_vue@3.5.13
@@ -93,6 +99,25 @@ devDependencies:
   vue-tsc: 1.8.27_typescript@4.9.5
 
 packages:
+  /@alova/adapter-uniapp/2.0.11_alova@3.2.10:
+    resolution:
+      {
+        integrity: sha512-zpEG2c6KWaN0NAj0ZsYq6KZ7lAE6RPnVcwHlPX5dXQ/M9F909BUORc1LohRwivna9l0SMCln6mRSRxj8Fc0pcg==,
+      }
+    peerDependencies:
+      alova: ^3.0.20
+    dependencies:
+      '@alova/shared': 1.1.2
+      alova: 3.2.10
+    dev: false
+
+  /@alova/shared/1.1.2:
+    resolution:
+      {
+        integrity: sha512-8q/gMHFpzm7XYcaUlsyTCMDRRhFnewwheTeObMjPl1+bFdr+wZuBEHEPYIyd8tyzLwfrqpBeonaMN2tlngM8EA==,
+      }
+    dev: false
+
   /@ampproject/remapping/2.3.0:
     resolution:
       {
@@ -4960,6 +4985,17 @@ packages:
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
     dev: true
+
+  /alova/3.2.10:
+    resolution:
+      {
+        integrity: sha512-OHMuSNUbIUEsAq6q5DabISNgFMIXqrC/DPBQv1QJEwxW3fWlYlaF6Vr8b4iqwZnUd2+0rCmFm9GnpKWk7vvx2w==,
+      }
+    engines: {node: '>= 18.0.0'}
+    dependencies:
+      '@alova/shared': 1.1.2
+      rate-limiter-flexible: 5.0.5
+    dev: false
 
   /ansi-escapes/4.3.2:
     resolution:
@@ -9959,6 +9995,13 @@ packages:
       }
     engines: {node: '>= 0.6'}
     dev: true
+
+  /rate-limiter-flexible/5.0.5:
+    resolution:
+      {
+        integrity: sha512-+/dSQfo+3FYwYygUs/V2BBdwGa9nFtakDwKt4l0bnvNB53TNT++QSFewwHX9qXrZJuMe9j+TUaU21lm5ARgqdQ==,
+      }
+    dev: false
 
   /raw-body/2.5.2:
     resolution:
