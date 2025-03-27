@@ -25,11 +25,13 @@ specifiers:
   '@dcloudio/uni-stacktracey': 3.0.0-4030620241128001
   '@dcloudio/vite-plugin-uni': 3.0.0-4030620241128001
   '@eslint/js': ^9.23.0
+  '@types/crypto-js': ^4.2.2
   '@vue/runtime-core': ^3.4.21
   '@vue/tsconfig': ^0.1.3
   alova: ^3.2.10
   commitlint: ^19.8.0
   commitlint-config-gitmoji: ^2.3.1
+  crypto-js: ^4.2.0
   eslint: ^8.57.1
   eslint-config-prettier: ^10.1.1
   eslint-plugin-vue: ^10.0.0
@@ -67,6 +69,7 @@ dependencies:
   '@dcloudio/uni-mp-xhs': 3.0.0-4030620241128001_postcss@8.5.3+vue@3.5.13
   '@dcloudio/uni-quickapp-webview': 3.0.0-4030620241128001_postcss@8.5.3+vue@3.5.13
   alova: 3.2.10
+  crypto-js: 4.2.0
   pinia: 2.0.36_6ojp7pwvafskey22aliwdxkyey
   vue: 3.5.13_typescript@4.9.5
   vue-i18n: 9.14.3_vue@3.5.13
@@ -79,6 +82,7 @@ devDependencies:
   '@dcloudio/uni-stacktracey': 3.0.0-4030620241128001
   '@dcloudio/vite-plugin-uni': 3.0.0-4030620241128001_ub4j6snrgbqmf6kw3puo4b5p3q
   '@eslint/js': 9.23.0
+  '@types/crypto-js': 4.2.2
   '@vue/runtime-core': 3.5.13
   '@vue/tsconfig': 0.1.3_@types+node@22.13.13
   commitlint: 19.8.0_rwlm5ss5tbda5f47mkxkygle3a
@@ -4286,6 +4290,13 @@ packages:
       '@types/node': 22.13.13
     dev: true
 
+  /@types/crypto-js/4.2.2:
+    resolution:
+      {
+        integrity: sha512-sDOLlVbHhXpAUAL0YHDUUwDZf3iN4Bwi4W6a0W0b+QcAezUbRtH4FVb+9J4h+XFPW7l/gQ9F8qC7P+Ec4k8QVQ==,
+      }
+    dev: true
+
   /@types/estree/1.0.6:
     resolution:
       {
@@ -5943,6 +5954,13 @@ packages:
       shebang-command: 2.0.0
       which: 2.0.2
     dev: true
+
+  /crypto-js/4.2.0:
+    resolution:
+      {
+        integrity: sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==,
+      }
+    dev: false
 
   /css-font-size-keywords/1.0.0:
     resolution:
