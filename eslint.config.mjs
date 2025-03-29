@@ -3,6 +3,7 @@ import eslintConfigPrettier from 'eslint-config-prettier'
 import eslintPluginVue from 'eslint-plugin-vue'
 import globals from 'globals'
 import typescriptEslint from 'typescript-eslint'
+import importPlugin from 'eslint-plugin-import'
 
 export default typescriptEslint.config(
 	{ignores: ['*.d.ts', '**/coverage', '**/dist']},
@@ -23,7 +24,26 @@ export default typescriptEslint.config(
 		},
 		rules: {
 			// your rules
+			'vue/multi-word-component-names': [
+				'error',
+				{
+					'ignores': ['index'],
+				},
+			],
+			'vue/block-order': [
+				'error',
+				{
+					'order': ['docs', 'script', 'template', 'style'],
+				},
+			],
 		},
+	},
+	{
+		files: ['**/*.{ts,tsx}'],
+		extends: [
+			importPlugin.flatConfigs.recommended,
+			importPlugin.flatConfigs.typescript,
+		],
 	},
 	eslintConfigPrettier,
 )
